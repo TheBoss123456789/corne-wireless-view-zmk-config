@@ -5,7 +5,8 @@
 
     kscan0: kscan {
         compatible = "zmk,kscan-mock";
-        label = "default_kscan";
         status = "disabled";
+        rows = <0>;
+        columns = <0>;
     };
 };
