@@ -1,14 +1,11 @@
 / {
     chosen {
-        zmk,kscan = &default_kscan;
-        zephyr,display = &nice_view;
+        zmk,kscan = &kscan0;
     };
-};
 
-&default_kscan {
-    status = "disabled";
-};
-
-&nice_view {
-    status = "okay";
+    kscan0: kscan {
+        compatible = "zmk,kscan-mock";
+        label = "default_kscan";
+        status = "disabled";
+    };
 };
