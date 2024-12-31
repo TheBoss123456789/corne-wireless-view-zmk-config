@@ -1,9 +1,14 @@
 / {
     chosen {
         zmk,kscan = &default_kscan;
+        zephyr,display = &nice_view;
     };
 };
 
 &default_kscan {
     status = "disabled";
+};
+
+&nice_view {
+    status = "okay";
 };
