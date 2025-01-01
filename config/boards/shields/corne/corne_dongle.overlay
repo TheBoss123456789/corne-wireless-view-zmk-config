@@ -22,7 +22,3 @@
 &usbd {
     status = "okay";
 };
-
-&idle_states {
-    status = "okay";
-};
